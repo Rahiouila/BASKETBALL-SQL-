@@ -1,0 +1,68 @@
+body {font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+}
+h1, h2 {
+color: #fff3e6;
+}
+.container {
+max-width: 800px;
+margin: auto;
+}
+.btn {
+margin: 5px;
+}
+body {
+font-family: Arial, sans-serif;
+background-color: #7b6114;
+margin: 0;
+padding: 0;
+}
+
+h1 {
+text-align: center;
+color: #759658;
+}
+
+.container {
+text-align: center;
+margin: auto;
+max-width: 800px;
+padding-top: 50px;
+}
+
+.btn {
+display: inline-block;
+margin: 10px;
+padding: 10px 20px;
+text-decoration: none;
+background-color: #bcdb34;
+color: #fff;
+border-radius: 5px;
+font-weight: bold;
+transition: background-color 0.3s;
+}
+
+.btn:hover {
+background-color: #a3b929;
+}
+
+/* Style pour les rubans */
+.ribbon-left {
+position: fixed;
+top: 0;
+left: 0;
+width: 150px;
+height: 100%;
+background: url('../img/basketfond.jpg') no-repeat center center;
+background-size: cover;
+}
+
+.ribbon-right {
+position: fixed;
+top: 0;
+right: 0;
+width: 150px;
+height: 100%;
+background: url('../img/basketfond.jpg') no-repeat center center;
+background-size: cover;
+}

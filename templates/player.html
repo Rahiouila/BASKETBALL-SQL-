@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du joueur</title>
+</head>
+<body>
+    <h1>Détails du joueur</h1>
+    {% if player %}
+        <p>Nom : {{ player.Name }}</p>
+        <p>Taille : {{ player.Height }} cm</p>
+        <p>Nationalité : {{ player.Citizenship }}</p>
+    {% else %}
+        <p>Joueur introuvable</p>
+    {% endif %}
+    <a href="/players">Retour à la liste des joueurs</a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Joueurs</title>
+    <!-- Intégration de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <!-- Conteneur principal -->
+    <div class="container py-5">
+        <!-- Titre principal -->
+        <h1 class="text-center text-primary mb-4">Recherche de Joueurs</h1>
+        
+        <!-- Formulaire de recherche -->
+        <form method="POST" action="/user/search_players" class="bg-white p-4 shadow rounded">
+            <div class="mb-3">
+                <label for="club_id" class="form-label">ID du Club :</label>
+                <input type="text" id="club_id" name="club_id" class="form-control" placeholder="Ex: 1">
+            </div>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom du Joueur :</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Ex: Michael">
+            </div>
+
+            <div class="mb-3">
+                <label for="nationality" class="form-label">Nationalité :</label>
+                <input type="text" id="nationality" name="nationality" class="form-control" placeholder="Ex: USA">
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Rechercher</button>
+            </div>
+        </form>
+
+        <!-- Bouton de retour -->
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-secondary btn-lg">Retour à l'accueil</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 text-muted">
+        <p>&copy; 2024 Projet Basketball - Tous droits réservés</p>
+    </footer>
+
+    <!-- Intégration de Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

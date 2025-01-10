@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 National Players</title>
+</head>
+<body>
+    <h1>Top 10 National Players</h1>
+    <table border="1">
+        <tr>
+            <th>Player ID</th>
+            <th>Name</th>
+            <th>Total Points</th>
+        </tr>
+        {% for player in players %}
+        <tr>
+            <td>{{ player.Player_ID }}</td>
+            <td>{{ player.Name }}</td>
+            <td>{{ player.TotalPoints }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Retour à l'accueil</a>
+</body>
+</html>
